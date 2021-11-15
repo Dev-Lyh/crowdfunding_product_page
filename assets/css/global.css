@@ -12,10 +12,12 @@ html {
   --Black: #000000; /* 0, 0%, 0%*/
   --Dark-Gray: hsl(0, 0%, 48%);
   --White: hsl(100, 100%, 100%);
+  --Almost-White: hsl(0, 0%, 98%);
 
   font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
   font-family: 'Commissioner', sans-serif;
+  background-color: var(--Almost-White);
 }
