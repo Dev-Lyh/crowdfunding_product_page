@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   --Moderate-Cyan: hsl(176, 50%, 47%);
   --Dark-Cyan: hsl(176, 72%, 28%);
   --Black: #000000; /* 0, 0%, 0%*/
   --Dark-Gray: hsl(0, 0%, 48%);
+  --White: hsl(100, 100%, 100%);
 
   font-size: 62.5%;
 }

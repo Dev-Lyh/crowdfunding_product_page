@@ -1,0 +1,107 @@
+section.init {
+  background-image: url("../img/image-hero-desktop.jpg");
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+  object-fit: contain;
+}
+section.init > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 16rem;
+  height: 10rem;
+  width: 100%;
+}
+section.init > header > .hamburger-menu {
+  display: none;
+  opacity: 0;
+}
+section.init > header > #btnOpenMenu,
+section.init > header > #btnCloseMenu {
+  display: none;
+  opacity: 0;
+}
+section.init > header > nav > a {
+  text-decoration: none;
+  color: var(--White);
+  margin-left: 3rem;
+}
+main {
+  position: absolute;
+  top: 30rem;
+
+  background-color: rgba(255, 0, 0, 0.342);
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 850px) {
+  section.init {
+    background-position: center;
+  }
+  section.init > header {
+    padding: 0 8rem;
+  }
+}
+@media screen and (max-width: 590px) {
+  section.init > header {
+    padding: 0 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.init {
+    background-image: url("../img/image-hero-mobile.jpg");
+  }
+  section.init > header > #btnOpenMenu {
+    display: block;
+    opacity: 1;
+  }
+  section.init > header > figure {
+    z-index: 16;
+  }
+  section.init > header > #btnCloseMenu {
+    z-index: 16;
+    opacity: 1;
+  }
+  section.init > header > nav {
+    display: none;
+    transition: all .5s ease-in-out;
+  }
+  section.init > header > nav.active {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    background-color: #00000050;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    z-index: 9;
+    padding: 10rem  2rem;
+  }
+  section.init > header > nav > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 4rem;
+    background-color: white;
+    color: black;
+    height: 8rem;
+    width: 100%;
+    margin-left: 0;
+    font-weight: bold;
+  }
+  section.init > header > nav > a:nth-child(1) {
+    border-radius: 1rem 1rem 0 0;
+  }
+  section.init > header > nav > a:nth-child(2) {
+    border-top: .1rem solid var(--Dark-Gray);
+    border-bottom: .1rem solid var(--Dark-Gray);
+  }
+  section.init > header > nav > a:nth-child(3) {
+    border-radius: 0 0 1rem 1rem;
+  }
+}
